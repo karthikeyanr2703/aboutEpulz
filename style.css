@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+}
+#aboutUs {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+#left {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  border: 7px solid purple;
+  box-shadow: 0 0 20px 10px #a515d9;
+}
+#left img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
+}
+#right {
+  width: 50%;
+  height: 100%;
+}
+hr {
+  width: 30%;
+  height: 2px;
+  border: none;
+  background-color: purple;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#right h4 {
+  color: purple;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+#right h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+#right p {
+    display: inline;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+ 
+}
+#lastText {
+  display: flex;
+  margin-top: 40px;
+}
+#text1 {
+  margin-right: 90px;
+}
+#lastText h3 {
+  color: purple;
+  font-weight: 700;
+  font-size: 30px;
+}
+#lastText h5 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+#galry{
+    width: 100%;
+    height: 100%;
+}
+/* gallery */
+.gallery {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.gallery .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid purple;
+  padding: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.box .deatils {
+  margin-top: 10px;
+  text-align: center;
+}
+.deatils h2 {
+  color: purple;
+  font-weight: 800;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+}
+.box:hover {
+  transform: scale(1.1);
+}
+.box img:hover {
+  border: 3px dotted purple;
+}
+
+@media  (max-width: 700px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+  }
+  #aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+  }
+  hr{
+    position: relative;
+    left:35px ;
+    width: 80%;
+    height: 4px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  #left {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    border: 7px solid purple;
+    box-shadow: 0 0 5px 2px #a515d9;
+  }
+  #left img {
+    width: 100%;
+    height: 100%;
+  
+    object-fit: fill;
+  }
+  #right {
+    width: 100%;
+    height: 50%;
+  }
+  #right h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+  #right h4 {
+    color: purple;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+  }
+  #right p{
+    text-align: center;
+  }
+  .gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #lastText{
+    display: none;
+  }
+  .box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid purple;
+    padding: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  #respPara{
+    display: none;
+  }
+}
