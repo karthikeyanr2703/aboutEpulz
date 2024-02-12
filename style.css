@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 body,html {
   width: 100vw;
-  height: 100vh;
+  height: 300vh;
   background-color: black;
   overflow-x: hidden;
 }
@@ -142,11 +142,119 @@ hr {
 .box img:hover {
   border: 3px dotted purple;
 }
+#slide{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+}
+h1{
+  font-family: "Protest Strike", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(172, 9, 172),0 0 20px rgb(172, 9, 172),0 0 40px rgb(172, 9, 172),0 0 60px rgb(172, 9, 172) ;
+}
+.slider {
+  width: 1300px;
+  max-width: 60vw;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  
+}
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slider .list img {
+  width: 1300px;
+  max-width: 60vw;
+  height: 100%;
+  object-fit: fill;
+}
+.slider .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active {
+  width: 30px;
+}
+/* responsive */
+@media (max-width: 1200px) {
+    .slider {
+        width: 1300px;
+        max-width: 75vw;
+        height: 70%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        
+      }
+    .slider .list {
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        transition: 1s;
+      }
+      .slider .list img {
+        width: 1300px;
+        max-width: 75vw;
+        height: 100%;
+        object-fit: fill;
+      }
+}
 
 @media  (max-width: 700px) {
   body {
     width: 100vw;
-    height: 200vh;
+    height: 400vh;
     background-color: black;
     overflow-x: hidden;
   }
@@ -230,4 +338,35 @@ hr {
   #respPara{
     display: none;
   }
+  .slider {
+    width: 1300px;
+    max-width: 90vw;
+    height: 55%;
+   position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+   
+  }
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+  }
+  .slider .list img {
+    width: 1300px;
+    max-width: 90vw;
+    height: 100%;
+    object-fit: fill;
+  }
+  #slide h1{
+   
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 30px;
+    text-shadow: 0 0 20px rgb(172, 9, 172),0 0 20px rgb(172, 9, 172),0 0 40px rgb(172, 9, 172),0 0 60px rgb(172, 9, 172) ;
+}
 }
