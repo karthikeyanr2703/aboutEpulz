@@ -29,7 +29,7 @@ body,html {
   height: 100%;
   padding: 20px;
   border: 7px solid purple;
-  box-shadow: 0 0 20px 10px #a515d9;
+  box-shadow: 0 0 10px 2px #a515d9;
 }
 #left img {
   width: 100%;
@@ -96,9 +96,20 @@ hr {
     height: 100vh;
    
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     overflow: hidden;
+}
+h1#staffHeading{
+  text-align: center;
+ margin-top: 20px;
+  font-family: "Protest Strike", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 0 0 20px rgb(172, 9, 172),0 0 10px rgb(172, 9, 172),0 0 20px rgb(172, 9, 172),0 0 40px rgb(172, 9, 172) ;
+
 }
 /* gallery */
 .gallery {
