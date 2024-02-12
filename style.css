@@ -72,11 +72,16 @@ hr {
 }
 #text1 {
   margin-right: 90px;
+  margin-top: -25px;
+}
+#text2 {
+  margin-top: -25px;
 }
 #lastText h3 {
   color: purple;
   font-weight: 700;
   font-size: 30px;
+  
 }
 #lastText h5 {
   color: #fff;
@@ -84,10 +89,11 @@ hr {
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+  
 }
 #galry{
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
    
     display: flex;
     align-items: center;
