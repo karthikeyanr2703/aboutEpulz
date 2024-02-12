@@ -6,21 +6,23 @@
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-body {
+body,html {
   width: 100vw;
   height: 100vh;
   background-color: black;
   overflow-x: hidden;
 }
 #aboutUs {
-  width: 100%;
-  height: 100%;
-  background-color: black;
+  
+  width: 100vw;
+  height: 100vh;
+ 
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
+  overflow: hidden;
 }
 #left {
   width: 50%;
@@ -58,7 +60,7 @@ hr {
   font-weight: 600;
 }
 #right p {
-    display: inline;
+   
   font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
@@ -84,8 +86,13 @@ hr {
   text-align: center;
 }
 #galry{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 200vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 /* gallery */
 .gallery {
@@ -101,7 +108,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
+ 
   transition: all 0.3s ease-in-out;
 }
 .box img {
@@ -133,7 +140,7 @@ hr {
 @media  (max-width: 700px) {
   body {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     background-color: black;
     overflow-x: hidden;
   }
@@ -142,7 +149,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     padding: 10px;
   }
   hr{
@@ -185,14 +192,22 @@ hr {
   #right p{
     text-align: center;
   }
+  #galry{
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .gallery {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+     flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    gap: 10px;
+    gap: 40px;
+    
   }
   #lastText{
     display: none;
