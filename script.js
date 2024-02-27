@@ -3,6 +3,13 @@ let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let dots = document.querySelectorAll('.slider .dots li');
+var typed = new Typed(".auto-type",{
+    strings:["Epulz","TPGIT"],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:true
+
+})
 function downloadPDF() {
     // Specify the path to your PDF file
     var pdfUrl = './Adobe Scan 13-Jun-2023.pdf';
@@ -14,6 +21,24 @@ function downloadPDF() {
 
     // Trigger the click event
     link.click();
+}
+function openPDF() {
+    // Specify the path to your PDF file
+    var pdfUrl = './Adobe Scan 13-Jun-2023.pdf';
+
+    // Create a link element
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.target = '_blank'; // Open in new tab
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Trigger the click event
+    link.click();
+
+    // Remove the link from the body (optional)
+    document.body.removeChild(link);
 }
 
 let lengthItems = items.length - 1;
