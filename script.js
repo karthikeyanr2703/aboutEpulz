@@ -3,6 +3,18 @@ let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let dots = document.querySelectorAll('.slider .dots li');
+function downloadPDF() {
+    // Specify the path to your PDF file
+    var pdfUrl = './Adobe Scan 13-Jun-2023.pdf';
+
+    // Create a link element
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Souvenir.pdf';
+
+    // Trigger the click event
+    link.click();
+}
 
 let lengthItems = items.length - 1;
 let active = 0;
